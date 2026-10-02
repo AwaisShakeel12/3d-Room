@@ -1,0 +1,18 @@
+### Upload texture
+POST http://127.0.0.1:8010/api/textures/upload/
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary123456
+
+------WebKitFormBoundary123456
+Content-Disposition: form-data; name="image"; filename="photo.jpg"
+Content-Type: image/jpeg
+
+< ./cluxd.png
+------WebKitFormBoundary123456
+Content-Disposition: form-data; name="surface"
+
+floor
+------WebKitFormBoundary123456
+Content-Disposition: form-data; name="session_key"
+
+test123
+------WebKitFormBoundary123456--
